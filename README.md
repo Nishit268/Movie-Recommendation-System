@@ -23,7 +23,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 ## Steps to Add Code to Your Branch
 
 1. **Clone the Repository:**
-1. Clone the repository:
    ```bash
    git clone https://github.com/Nishit268/MovieMatch
 
@@ -39,7 +38,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 * **NOTE:** You only have to do this only for first time.
 
-  ### **EACH TIME YOU WANT TO PUSH CODE YOU HAVE TO FOLLOW THESE STEPS:**
+  ### **EACH TIME YOU WANT TO PUSH NEW/UPDATED CODE YOU HAVE TO FOLLOW ONLY THESE STEPS:**
 
 4. **Add changes:**
    ```bash
