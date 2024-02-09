@@ -52,4 +52,3 @@ Follow these instructions to get a copy of the project up and running on your lo
    ```bash
    git push origin your_branch_name 
 ### For further process like pull request as admin (Nishit).
-   git clone https://github.com/your-username/MovieMatch.git
