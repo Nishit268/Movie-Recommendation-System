@@ -38,7 +38,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 * **NOTE:** You only have to do this only for first time.
 
-  ### **EACH TIME YOU WANT TO PUSH NEW/UPDATED CODE YOU HAVE TO FOLLOW ONLY THESE STEPS:**
+  ### **Each time you want to push new/updated code file you only need to follow these steps:**
 
 4. **Add changes:**
    ```bash
