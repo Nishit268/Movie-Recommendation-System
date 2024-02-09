@@ -25,6 +25,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. **Clone the Repository:**
 1. Clone the repository:
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/Nishit268/MovieMatch
 
 * Open your Command Prompt and first navigate to your project folder where you cloned this repository. Then follow these command on your command prompt.
@@ -52,3 +53,5 @@ Follow these instructions to get a copy of the project up and running on your lo
    ```bash
    git push origin your_branch_name 
 ### If you face any problem or confusion contact me(Nishit) :) also for further process like pull and merge requests.
+=======
+>>>>>>> 618a376a674c5537e2d0001c56019ec9237e83eb
