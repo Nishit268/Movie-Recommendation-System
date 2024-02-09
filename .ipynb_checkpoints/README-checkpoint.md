@@ -51,4 +51,4 @@ Follow these instructions to get a copy of the project up and running on your lo
 6. **Push code on your remote branch:**
    ```bash
    git push origin your_branch_name 
-### For further process like pull request as admin (Nishit).
+### If you face any problem or confusion contact me(Nishit) :) also for further process like pull and merge requests.
