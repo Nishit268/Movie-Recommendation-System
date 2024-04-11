@@ -1,11 +1,15 @@
 import streamlit as st
 import pickle
 import requests
-
+from sklearn.feature_extraction.text import TfidfVectorizer,CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 st.set_page_config(page_title="MovieMatch", page_icon="https://media.istockphoto.com/id/1642381175/vector/cinema.jpg?s=612x612&w=0&k=20&c=owIct55daWlWRwPbTYLI9Y1IsrgYiqJcpvvgycvxBhE=", layout="wide")
 
 movies = pickle.load(open('movies.pkl', 'rb'))
-cosine_similarity = pickle.load(open('cosine_similarity.pkl', 'rb'))
+#Creating vectors for alll the movies.
+vectorizer = TfidfVectorizer(stop_words='english')
+vector = vectorizer.fit_transform(movies['tags'])
+cosine_similarity = cosine_similarity(vector)
 
 def fetch_movie_details(movie_id):
     api_key = "760927dfa125b06d62d56c02c27a110f"
