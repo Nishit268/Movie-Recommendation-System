@@ -158,7 +158,7 @@ hr {
 st.markdown("""
 <div class="flex-container">
     <img src="https://media.istockphoto.com/id/1642381175/vector/cinema.jpg?s=612x612&w=0&k=20&c=owIct55daWlWRwPbTYLI9Y1IsrgYiqJcpvvgycvxBhE=" class="logo">
-    <h1 class="custom-header" style="font-color:black" >MovieMatch</h1>
+    <h1 class="custom-header" style="color: black;" >MovieMatch</h1>
 </div>
 """, unsafe_allow_html=True)
 
