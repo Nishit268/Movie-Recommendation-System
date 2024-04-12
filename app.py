@@ -8,8 +8,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 st.set_page_config(page_title="MovieMatch", page_icon="https://media.istockphoto.com/id/1642381175/vector/cinema.jpg?s=612x612&w=0&k=20&c=owIct55daWlWRwPbTYLI9Y1IsrgYiqJcpvvgycvxBhE=", layout="wide")
 
 movies = pickle.load(open('movies.pkl', 'rb'))
-print("VERSION:::::::::::::::::::::::::::", sklearn.__version__)
-#Creating vectors for alll the movies.
 vectorizer = TfidfVectorizer(stop_words='english')
 vector = vectorizer.fit_transform(movies['tags'])
 cosine_similarity = cosine_similarity(vector)
@@ -42,7 +40,9 @@ def generate_recommendations(user_input=""):
 
 st.markdown("""
 <style>
-/* Custom styles */
+body, html {
+    background-color:black
+}
 .reportview-container {
     background: url(bg.png) no-repeat center center fixed;
     background-size: cover;
@@ -58,7 +58,6 @@ st.markdown("""
 .grid-item {
     margin-bottom: 10px;
 }
-/* Hide Streamlit's default icons */
 .stImage > div > div > div > button {
     display: none;
 }
@@ -156,15 +155,13 @@ hr {
 """, unsafe_allow_html=True)
 
 
-# Header with logo and title centered
 st.markdown("""
 <div class="flex-container">
     <img src="https://media.istockphoto.com/id/1642381175/vector/cinema.jpg?s=612x612&w=0&k=20&c=owIct55daWlWRwPbTYLI9Y1IsrgYiqJcpvvgycvxBhE=" class="logo">
-    <h1 class="custom-header">MovieMatch</h1>
+    <h1 class="custom-header" >MovieMatch</h1>
 </div>
 """, unsafe_allow_html=True)
 
-# Your columns for the search bar and button
 left_spacer, mid_section, right_spacer = st.columns([1, 2, 1])
 with mid_section:
     search_col, button_col = st.columns([3, 1], gap="small")
@@ -173,10 +170,8 @@ with mid_section:
     with button_col:
         search_button = st.button('Recommend', key='search_button')
 
-# Divider
 st.markdown('<hr>', unsafe_allow_html=True)
 
-# Recommendations
 if search_button and search_query.strip():
     with st.spinner('Generating Recommendations...'):
         recommendations = generate_recommendations(search_query.strip())
